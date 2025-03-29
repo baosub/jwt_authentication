@@ -1,3 +1,5 @@
+//routes/auth.ts
+
 import { Router } from 'express';
 import jwt from 'jsonwebtoken';
 import { authenticateToken } from '../middleware/authMiddleware';
