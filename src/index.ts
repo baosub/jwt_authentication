@@ -1,12 +1,13 @@
-import app from './app';
+// src/index.ts
+import express from 'express';
+import authRoutes from './routes/auth';
 
-const PORT = process.env.PORT || 3000;
+const app = express();
+app.use(express.json());
 
-// app.listen(PORT, () => {
-//   console.log(`Servidor escuchando en el puerto ${PORT}`);
-// });
+app.use('/auth', authRoutes);
 
+const PORT = 3000;
 app.listen(PORT, () => {
-    console.log(`[server]: Server is running at http://localhost:${PORT}`);
-  });
-  
+  console.log(`Server running on http://localhost:${PORT}`);
+});
