@@ -1,0 +1,24 @@
+# Node.js
+node_modules/
+dist/
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+*.log
+logs/
+
+# Entorno
+.env
+
+# IDEs/Editors
+.vscode/
+.idea/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Otros
+coverage/
