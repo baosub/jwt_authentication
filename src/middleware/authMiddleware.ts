@@ -9,7 +9,7 @@ const JWT_SECRET =  process.env.JWT_SECRET || 'valor_por_defecto';
 
 
 
-``
+
 
 interface JwtPayload {
   id: number;
